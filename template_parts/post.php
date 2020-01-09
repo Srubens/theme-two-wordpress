@@ -7,8 +7,8 @@
       <?php the_excerpt('Leia Mais'); ?>
     </h3>
   </a>
-  <p class="post-meta">Posted by
-    <a href="<?php echo get_author_posts_url( get_the_author_meta('ID') ) ?>"><?php the_author(); ?></a>
+  <p class="post-meta">Postado por
+    <a href="<?php echo get_author_posts_url( get_the_author_meta('ID') ) ?>"><?php the_author(); ?></a>, em
     <?php echo get_the_date(); ?></p>
 </div>
 <hr>

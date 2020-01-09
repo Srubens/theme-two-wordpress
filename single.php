@@ -5,7 +5,11 @@ if( have_posts() ){
        the_post(); 
 
 ?>
-<header class="masthead" style="background-image: url('<?php bloginfo('template_url'); ?>/img/post-bg.jpg')">
+<header class="masthead" style="background-image: url('<?php 
+   if( has_post_thumbnail() ){
+      echo get_the_post_thumbnail_url($post->ID,'full');
+   }
+?>')">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
